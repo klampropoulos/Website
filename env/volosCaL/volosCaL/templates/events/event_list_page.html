@@ -1,0 +1,18 @@
+<div class="w3-row" >
+
+  {%load static%}{% for event in event_list %}
+  <div class="w3-col w3-content l3 m5 s12 ">
+
+  <div class="w3-card w3-content w3-white" style="width:93%;" >
+  	<img src="{{MEDIA_URL}}/media/events/{{event.id}}.jpg" alt="{{event.title}}" width="100%" height="200px">
+  	<div style="height:100px;line-height:100px;clear:both;vertical-align: middle;"><h2><span>{{event.title}}</span></h2></div>
+  	<p class="title">{{event.start_date}} - {{event.end_date}}</p>
+  	<p class="info"> {{event.description}}</p>
+  	{%if event.fb_page%}<a href="{{event.fb_page}}"><i class="fa fa-facebook"></i></a>{%endif%}
+   	<p><a href="{% url 'events:details' event.id%}"><button> {%trans 'Details'%}</button></a></p>
+  </div>
+  </div>
+  {% endfor %}
+
+
+  </div>

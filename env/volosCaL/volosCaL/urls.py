@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls), #admin site
@@ -23,4 +24,6 @@ urlpatterns = [
 
 urlpatterns += [
     url(r'^calendar/', include('calendarium.urls')),
+    url(r'', include('calendarium.urls')),
+
 ]
