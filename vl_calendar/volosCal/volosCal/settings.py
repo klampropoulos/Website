@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'filer', # for cal
     'mptt',
     'easy_thumbnails',
-    'calendarium',
+    #'calendarium',
     'location_field.apps.DefaultConfig', # for maps
     'colorfield', # for colour field
     'cal',
