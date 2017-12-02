@@ -1,3 +1,11 @@
+Env folder is nonsense.
+Please refer to vl_calendar folder for anything.
+
+3 installed apps.
+Accounts -> NOT READY
+Calendarium -> base
+cal -> antigrafi vasikwn stoixeiwn tou calendarium kai prosarmogi stis anagkes mas
+
 Install instructions
 
 # install python3
